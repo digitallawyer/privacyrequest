@@ -15,6 +15,7 @@
 
 <body class="bg-light">
     <div class="container">
+    	<form id="privacyform" name="privacyform" accept-charset="utf-8" action="https://formspree.io/pieter@legal.io" method="post">
         	<div class="row justify-content-center py-5">
 	            <div class="col-md-8 bg-white  px-5">
 	            	<img class="d-block mx-auto my-5" src="https://s3.amazonaws.com/production.lawgives.com/ep/5d/1b/5d1bde3bd96b560c3ab03eff.png" alt="" width="240" height="auto">
@@ -49,14 +50,14 @@
 	                    <div class="row">
 	                        <div class="col-md-6 mb-3">
 	                            <label for="firstName"><b>First name</b></label>
-	                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+	                            <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value="" required>
 	                            <div class="invalid-feedback">
 	                                Valid first name is required.
 	                            </div>
 	                        </div>
 	                        <div class="col-md-6 mb-3">
 	                            <label for="lastName"><b>Last name</b></label>
-	                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+	                            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="" required>
 	                            <div class="invalid-feedback">
 	                                Valid last name is required.
 	                            </div>
@@ -64,15 +65,15 @@
 	                    </div>
 	                    <div class="mb-3">
 	                        <label for="email"><b>Email</b></label>
-	                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+	                        <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="you@example.com">
 	                        <div class="invalid-feedback">
 	                            Please enter a valid email address for shipping updates.
 	                        </div>
 	                    </div>
 	                    <div class="mb-3">
 	                        <label for="email"><b>Request Details</b><span class="text-muted"> (Optional)</span></label>
-	                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-	                        <small class="text-muted">Full name as displayed on card</small>
+	                        <textarea class="form-control" name="details" id="details"  rows="3"></textarea>
+	                        <small class="text-muted">Please enter any background information that will help us process your request.</small>
 	                        <div class="invalid-feedback">
 	                            Please enter a valid email address for shipping updates.
 	                        </div>
@@ -116,6 +117,7 @@
 	                </form>
 	            </div>
 	        </div>
+        </form>
         </div>
         <footer class="my-1 text-muted text-center text-small">
             <p class="mb-1">Powered by ProService</p>
